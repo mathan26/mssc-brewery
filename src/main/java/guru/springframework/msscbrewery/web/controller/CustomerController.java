@@ -24,4 +24,5 @@ public class CustomerController {
     public ResponseEntity<CustomerDto> getById(@PathVariable("customerId") UUID customerId){
         return new ResponseEntity<>(customerService.getById(customerId), HttpStatus.OK);
     }
+
 }
